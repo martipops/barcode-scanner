@@ -1,4 +1,7 @@
-cd /D "%~dp0"
-powershell.exe -ExecutionPolicy Bypass -File "venv/bin/Activate.ps1"
+@echo off
 
-python3 barcode-scanner-server.py
+cd /D "%~dp0"
+
+venv\Scripts\activate.bat & @echo off & python barcode-scanner-server.py
+
+pause

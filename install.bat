@@ -2,7 +2,6 @@
 
 cd /D "%~dp0"
 
-python3 -m venv ./venv
-powershell.exe -ExecutionPolicy Bypass -File "venv/bin/Activate.ps1"
+python -m venv venv
 
-pip install -r requirements.txt
+venv\Scripts\activate.bat & pip install -r requirements.txt
