@@ -2,6 +2,4 @@
 
 cd /D "%~dp0"
 
-venv\Scripts\activate.bat & @echo off & python barcode-scanner-gui.py
-
-pause
+start venv\Scripts\pythonw.exe & @echo off & python barcode-scanner-gui.pyw
